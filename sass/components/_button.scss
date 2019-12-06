@@ -1,0 +1,24 @@
+.btn {
+    &:link,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 16px 40px;
+        border-radius: 100px;
+        transition: all 0.2s;
+    }
+    &:hover {
+        transform: translateY(-3px);
+    }
+    &:active {
+        transform: translateY(-1px);
+    }
+    &--white {
+        background-color: $color-white;
+        color: black;
+        animation: moveUp 0.3s ease-in-out 1s;
+        /* hide the btn before animation delay */
+        animation-fill-mode: backwards;
+    }
+}

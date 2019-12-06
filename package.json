@@ -1,0 +1,23 @@
+{
+  "name": "black-mambas-american-football",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass-watch": "node-sass sass/main.scss public/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abayoss/black-mambas-american-football.git"
+  },
+  "author": "ab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abayoss/black-mambas-american-football/issues"
+  },
+  "homepage": "https://github.com/abayoss/black-mambas-american-football#readme",
+  "landingpage": "abayoss.github.io/black-mambas-american-football",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
