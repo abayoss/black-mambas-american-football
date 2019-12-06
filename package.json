@@ -15,8 +15,7 @@
   "bugs": {
     "url": "https://github.com/abayoss/black-mambas-american-football/issues"
   },
-  "homepage": "https://github.com/abayoss/black-mambas-american-football#readme",
-  "landingpage": "abayoss.github.io/black-mambas-american-football",
+  "homepage": "https://abayoss.github.io/black-mambas-american-football/",
   "devDependencies": {
     "node-sass": "^4.13.0"
   }
