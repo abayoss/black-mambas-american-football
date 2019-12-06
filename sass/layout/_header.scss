@@ -1,4 +1,5 @@
 .header {
+    @include clearfix;
     min-height: 80vh;
     background-image: linear-gradient(
             to bottom right,
@@ -20,10 +21,7 @@
     }
     &__text-box {
         /* positioning */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include absCenter;
         /* centering btn */
         text-align: center;
     }
