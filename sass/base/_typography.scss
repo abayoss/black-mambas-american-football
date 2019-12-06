@@ -11,5 +11,18 @@ body {
     color: white;
     text-transform: uppercase;
     letter-spacing: 8px;
+    font-size: large;
     margin-bottom: 20px;
+}
+.heading-secondary {
+    /* text */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-shadow: rgba(0, 0, 0, 0.719);
+}
+.text-black {
+    letter-spacing: 2px;
+    color: black;
 }
