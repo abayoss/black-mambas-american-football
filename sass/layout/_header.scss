@@ -1,5 +1,4 @@
 .header {
-    @include clearfix;
     min-height: 80vh;
     background-image: linear-gradient(
             to bottom right,
@@ -15,6 +14,13 @@
         position: absolute;
         top: 40px;
         left: 40px;
+        @include respond(phone) {
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50px);
+            // width < 1200?
+
+        }
     }
     &__logo {
         height: 85px;

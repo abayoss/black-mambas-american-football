@@ -16,13 +16,32 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 /* reset initializer */
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  /* padding arround the page */
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 a:link, a:visited {
   text-decoration: none;
@@ -42,7 +61,6 @@ body {
   /* typography */
   font-family: lato, sans-serif;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.7;
   color: #777; }
 
@@ -66,21 +84,26 @@ body {
   letter-spacing: 2px;
   color: black; }
 
+.text-white {
+  letter-spacing: 2px;
+  color: white; }
+
 .header {
   min-height: 80vh;
   background-image: linear-gradient(to bottom right, rgba(85, 197, 122, 0.6), rgba(40, 180, 133, 0.6)), url(../media/img/hero-bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative; }
-  .header::after {
-    content: "";
-    display: table;
-    clear: both; }
   .header__logo-box {
     /* positioning */
     position: absolute;
     top: 40px;
     left: 40px; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo-box {
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50px); } }
   .header__logo {
     height: 85px; }
   .header__text-box {
@@ -113,10 +136,6 @@ body {
   /* hide the btn before animation delay */
   animation-fill-mode: backwards; }
 
-body {
-  /* padding arround the page */
-  padding: 30px; }
-
 section.about {
   background-color: #e4e4e4;
   padding: 40px;
@@ -127,3 +146,5 @@ section.about {
 section.contact {
   background-color: #28b485;
   padding: 40px; }
+  section.contact p {
+    color: white; }
