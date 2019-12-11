@@ -30,7 +30,7 @@ html {
 body {
     /* padding arround the page */
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 2rem;
 
     @include respond(tab-port) {
         padding: 0;
