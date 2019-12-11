@@ -1,5 +1,5 @@
 .header {
-    min-height: 80vh;
+    min-height: 90vh;
     background-image: linear-gradient(
             to bottom right,
             rgba($color-primary, 0.6),
@@ -15,11 +15,10 @@
         top: 40px;
         left: 40px;
         @include respond(phone) {
-            top: 0%;
+            // width < 1200?
+            top: 10px;
             left: 50%;
             transform: translateX(-50px);
-            // width < 1200?
-
         }
     }
     &__logo {
