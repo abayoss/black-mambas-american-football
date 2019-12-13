@@ -27,16 +27,19 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 76.25%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 60%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 85%; } }
   @media only screen and (min-width: 75em) {
     html {
-      font-size: 90%; } }
+      font-size: 100%; } }
   @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 75%; } }
+      font-size: 145%; } }
 
 body {
   /* padding arround the page */
@@ -60,14 +63,26 @@ a:link, a:visited {
     opacity: 1;
     transform: translateY(0px); } }
 
+@font-face {
+  font-family: 'endzoneregular';
+  src: url("../fonts/911fonts.com_endzoneregular__-_911fonts.com_fonts_qmtf-webfont.woff2") format("woff2"), url("../fonts/911fonts.com_endzoneregular__-_911fonts.com_fonts_qmtf-webfont.woff") format("woff");
+  font-weight: normal; }
+
 body {
   /* typography */
-  font-family: lato, sans-serif;
+  font-family: endzoneregular, sans-serif;
   font-weight: 700;
   line-height: 1.7;
   color: #777; }
 
 h1, h2, h3, h4, h5, h6 {
+  /* typography */
+  font-family: endzoneregular, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: white; }
+
+p {
   /* typography */
   font-family: lato, sans-serif;
   font-weight: 400;
@@ -93,6 +108,11 @@ h1, h2, h3, h4, h5, h6 {
 .text-black {
   letter-spacing: 2px;
   color: black; }
+
+.text-black-bold {
+  letter-spacing: 2px;
+  color: black;
+  font-weight: 900; }
 
 .text-white {
   letter-spacing: 2px;
@@ -147,11 +167,14 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: backwards; }
 
 section.about {
-  background-color: lightgray;
+  background-color: #f2f2f2;
   padding: 40px;
   min-height: 70vh; }
+  section.about h4 {
+    color: #111; }
   section.about p {
-    margin: 30px 0px; }
+    margin: 30px 0px;
+    color: #86868b; }
   @media only screen and (min-width: 75em) {
     section.about .instagram-post {
       max-width: 30% !important; }
@@ -165,5 +188,7 @@ section.about {
 section.contact {
   background-color: #28b485;
   padding: 40px; }
+  section.contact h4 {
+    color: #111; }
   section.contact p {
     color: white; }
