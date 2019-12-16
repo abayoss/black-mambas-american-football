@@ -2,10 +2,7 @@
 
 ### LIVE Website : https://abayoss.github.io/black-mambas-american-football/ 
 
-#### tech i used : 
-* sass
-* uiKit
-* dynamic html & Json parsing
+#### Using the power of sass, i made this responsive website, for this amazing team!
 
 ### Screen shot : 
 ![](https://i.imgur.com/9C5IdTQ.jpg)
