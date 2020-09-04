@@ -17,6 +17,6 @@
   },
   "homepage": "https://abayoss.github.io/black-mambas-american-football/",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
